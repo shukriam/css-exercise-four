@@ -5,76 +5,90 @@
 
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 20px;
   font-family: sans-serif;
 }
 
-
-h1 {
-  height: 40px;
-  font-size: 120%;
+.container h1 {
+  font-size: 60%;
   font-weight: 400;
-  padding-top: 10pt;
-  padding-left: 10pt;
+  padding: 10px;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  font-weight: 500;
+  font-size: 50%;
+  text-align: center;
+  padding-top: 25px;
+}
+
+
+.preview-baku {
+  background-image: url(../images/baku.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.preview-london {
+  background-image: url(../images/london.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.preview-madrid {
+  background-image: url(../images/madrid.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.preview-rome {
+  background-image: url(../images/rome.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+div {
+  width: 196px;
+  height: 136px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
 }
 
 .header {
   width: 196px;
   height: 50px;
-  text-align: center;
-  padding-top: 5px;
 }
 
-.header h1 {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 100%;
-}
 
-.preview-baku {
-  width: 196px;
-  height: 136px;
-  background-image: url(../images/baku.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-
-.preview-london {
-  width: 196px;
-  height: 136px;
-  background-image: url(../images/london.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-
-}
-
-.preview-madrid {
-  width: 196px;
-  height: 136px;
-  background-image: url(../images/madrid.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-}
-
-.preview-rome {
-  width: 196px;
-  height: 136px;
-  background-image: url(../images/rome.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 @media screen and (min-width: 575px){
-   .container {column-count: 2;
-    margin: 1%;
-    width: 60%;}
+  div {
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+}
+  .container {
+    width: 100%;
+    margin: auto;
   }
+  .header {
+    display: block;
+    margin: auto;
+  }
+}
 
   @media screen and (min-width: 900px){
-     .container {column-count: 4;
-     margin: 1%;
-      width: 80%;}
-     }
+    div {
+      display: inline-block;
+      width: 24%;
+      height: 250px;
+  }
